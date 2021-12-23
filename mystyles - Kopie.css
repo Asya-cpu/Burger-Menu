@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 120%;
+}
+
+
+/* ==========================================================================
+My custom styles
+========================================================================== */
+
+/* --------------- Start Body Styles ------------------ */
+body{
+   margin:0;
+   overflow-x:hidden;
+   color: #141414;
+   background-color: #fcfafa;
+}
+/* --- END Body Styles --- */
+
+
+/* --------------- Start Header Styles ------------------ */
+
+header{
+   width:100%;
+   display:table;
+   background-color:#6c8d85e0;
+   margin-bottom:50px
+}
+.header__callout {
+   text-align: center;
+   font: bold 250% Verdana, Arial, Helvetica, sans-serif;
+}
+
+.type {
+   display: block;
+   text-align: center;
+   margin: 2rem auto;
+}
+
+.span__mask {
+   font: 1.3rem 'Ephesis', cursive; 
+}
+
+.span__insp {
+   font: 1rem 'Cherish', cursive;
+}
+.container{
+   width:100%;
+   padding-right:15px;
+   padding-left:15px;
+   margin-right:auto;
+   margin-left:auto
+}
+.toggle-icon{
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+   width:35px;
+   height:35px;
+   position:absolute;
+}
+
+.main p {
+   font-size: 0.8rem;
+   line-height: 1;
+   padding: 5px;    
+}
+
+h2 {
+   margin-left: 2rem;
+}
+
+.main__item {
+   color: rgb(2, 2, 2);
+}
+
+.main__img{
+   text-align: center;
+   padding-right: 10px;
+   
+}
+
+.img__mask {
+   max-width: 100%;
+   height: auto;
+   background: #fafafa;
+   display: block;
+   margin: 0 auto;
+   float: left;
+   padding: 10px;
+}
+
+@media (min-width: 1200px) {
+   .container{
+      max-width:1140px
+   }
+   }
+   #logo{
+       float:left;
+       font-size:25px;
+       text-transform:uppercase;
+       color:#fffab2;
+       font-weight:600;
+       text-decoration:none;
+       padding:11px 0
+   }
+   nav{
+       width:auto;
+       float:right;
+       margin-top:7px
+   }
+   nav ul{
+       display:table;
+       float:right;
+       margin:0px;
+       padding:0px
+   }
+   nav ul li{
+       float:left;
+       list-style-type:none;
+       padding-left: 5px;
+       
+   }
+   nav ul li:last-child{
+       padding-right:0
+   }
+   nav ul li a{
+       color:#101111;
+       font-size:19px;
+       padding:10px 50px;
+       display:inline-block;
+       text-decoration:none;
+       background-color: #647c73;
+      border-radius: 0.4em;
+   }
+   nav ul li a:hover{
+       background-color:#143a06;
+       color:#070707;
+       text-decoration:underline
+   }
+   input[type=checkbox],
+   label{
+       display:none
+   }
+
+@media only screen and (max-width: 980px) {
+   header{
+       padding:40px 0;
+   }
+   #logo{
+       padding:0
+   }
+   input[type=checkbox]{
+       position:absolute;
+       top:-9999px;
+       left:-9999px;
+       background:none
+   }
+   input[type=checkbox]:focus{
+       background:none;
+   }
+   label{
+       float: right;
+       display:inline-block;
+       cursor:pointer;
+       margin-right:65px
+   }
+   input[type=checkbox]:checked ~ nav{
+       display:block
+   }
+   nav{
+       display:none;
+       position:absolute;
+       right:0px;
+       top:310px;
+       background-color:#002e5b;
+       padding:0;
+       z-index:99;
+   }
+   nav ul{
+       width:auto
+   }
+   nav ul li{
+       float:none;
+       padding:0;
+       width:100%;
+       display:table
+   }
+   nav ul li a{
+       color:#FFF;
+       font-size:15px;
+       padding:10px 50px;
+       display:block;
+       border-bottom:1px solid rgba(225,225,225,0.1)
+   }
+   .img__mask {
+      float: none;
+   }
+}
+.main {
+   flex: 1;
+   padding: 0 1rem;
+   border-left: 1px solid #132517;
+}
+
+.main p {
+   padding: 5px;
+   font-size: 1rem;
+   line-height: 1.2
+   }
+
+.main__img{
+   float:none;
+   padding: 5px;    
+}
+@media only screen and (max-width: 360px) {
+   label{
+       padding:50px 0
+   }
+   #logo{
+       font-size:20px
+   }
+   nav{
+       top:47px
+   }
+}
+
+
+
+
+/* --- END Nav Styles --- */
+
+/* --------------- Start Main Styles ------------------ */
+
+
+
+/* --- Start @media screen --- */
+
+
+/* END @media screen */
+
